@@ -7,10 +7,19 @@ import Input from '../components/Input';
 export default {
   title: 'components/Input',
   component: Input,
+  args: {
+    placeholder: 'Search country',
+  },
 } as Meta;
 
-export const Basic: Story = args => <Input name="search" {...args} />;
+export const Basic: Story = args => (
+  <div style={{ width: 400 }}>
+    <Input name="search" {...args} />
+  </div>
+);
 
 export const WithIcon: Story = args => (
-  <Input name="search" icon={<Search />} {...args} />
+  <div style={{ width: 400 }}>
+    <Input name="search" icon={<Search />} {...args} />
+  </div>
 );

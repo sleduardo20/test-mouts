@@ -27,5 +27,9 @@ export const Container = styled.div<Pick<InputProps, 'name' | 'icon'>>`
     background: transparent;
     border: none;
     outline: none;
+
+    ::placeholder {
+      color: var(--ternary-color);
+    }
   }
 `;

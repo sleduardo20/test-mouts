@@ -1,18 +1,22 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  height: min 100vh;
+  height: 100vh;
+  width: 100vw;
   display: flex;
   background: var(--ternary-color);
-  overflow: hidden;
+  overflow-x: hidden;
 `;
 
 export const SlideBar = styled.div`
   width: 8.4rem;
-  height: 100vh;
+  height: 100%;
   background: var(--secondary-color);
   display: flex;
   align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 10;
 `;
 
 export const GroupIcons = styled.div`
@@ -44,8 +48,10 @@ export const Icon = styled.div`
 
 export const Wrapper = styled.main`
   flex: 1;
-  margin: 6.4rem 6.4rem 9.2rem 16.8rem;
+  margin: 6.4rem auto 0 -8.8rem;
+  padding-left: 18rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 `;

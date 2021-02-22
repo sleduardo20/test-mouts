@@ -7,18 +7,20 @@ export const GlobalStyles = createGlobalStyle`
     border: none;
     text-decoration: none;
     box-sizing: border-box;
-    width: 100vw;
+    
   }
   button, input{
     outline: none;
     
   }
-  html{
+  html,body{
     font-size: 62.5%;
+    height: 100%;
+    width: 100%;
+     
   }
 
   body {
-    width: 100%;
     font-family: 'Roboto',-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 1.3rem;
     display: flex;

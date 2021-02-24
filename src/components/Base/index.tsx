@@ -1,11 +1,9 @@
 import React from 'react';
 import { Flag, Home, ArrowLeftCircle } from 'styled-icons/feather';
 
-import * as S from './styles';
+import { BaseProps } from '../../types';
 
-export interface BaseProps {
-  children: React.ReactNode;
-}
+import * as S from './styles';
 
 const Base = ({ children }: BaseProps) => {
   return (

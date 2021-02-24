@@ -1,20 +1,16 @@
 import React from 'react';
 import { ArrowRight } from 'styled-icons/feather';
 
-import * as S from './styles';
+import { CardProps } from '../../types';
 
-export interface CardProps {
-  flag: string;
-  name: string;
-  capital: string;
-}
+import * as S from './styles';
 
 const Card = ({ flag, name, capital }: CardProps) => {
   return (
     <S.Contanier>
       <a href="http://#">
         <S.Flag>
-          <img src={flag} alt="Flag of country" />
+          <img src={flag.svgFile} alt="Flag of country" />
         </S.Flag>
       </a>
       <h2>{name}</h2>

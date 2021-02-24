@@ -39,6 +39,10 @@ export const Icon = styled.div`
   }
 
   a {
+    & :hover {
+      color: var(--primary-color);
+    }
+
     svg {
       width: 100%;
       color: var(--white-color);

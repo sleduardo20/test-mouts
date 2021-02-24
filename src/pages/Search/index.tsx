@@ -1,8 +1,10 @@
 import React from 'react';
 
+import { CardProps } from '../../types';
+
 import Base from '../../components/Base';
 import Button from '../../components/Button';
-import Card, { CardProps } from '../../components/Card';
+import Card from '../../components/Card';
 import Input from '../../components/Input';
 
 import * as S from './styles';
@@ -10,7 +12,9 @@ import * as S from './styles';
 const mockCard: CardProps = {
   name: 'Brazil',
   capital: 'Brasília',
-  flag: 'https://restcountries.eu/data/bra.svg',
+  flag: {
+    svgFile: 'https://restcountries.eu/data/bra.svg',
+  },
 };
 
 const Search = () => {

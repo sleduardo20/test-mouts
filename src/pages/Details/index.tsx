@@ -1,6 +1,9 @@
 import React from 'react';
 
+import 'leaflet/dist/leaflet.css';
+
 import Base from '../../components/Base';
+import Map from '../../components/Map';
 
 import * as S from './styles';
 
@@ -13,7 +16,9 @@ const Details = () => {
       <S.Content>
         {mockCountry.Country.map(item => (
           <S.Info key={item.name}>
-            <S.Flag>{item.flag.svgFile}</S.Flag>
+            <S.Flag>
+              <img src={item.flag.svgFile} alt="" />
+            </S.Flag>
 
             <h2>{item.name}</h2>
             <strong>
@@ -33,7 +38,9 @@ const Details = () => {
             </strong>
           </S.Info>
         ))}
-        <S.Map />
+        <S.Map>
+          <Map />
+        </S.Map>
       </S.Content>
     </Base>
   );

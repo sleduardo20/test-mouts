@@ -1,6 +1,6 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react/types-6-0';
-import { Search } from 'styled-icons/feather';
+import { Search } from '@styled-icons/feather';
 
 import Input from '../components/Input';
 

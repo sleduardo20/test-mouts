@@ -1,5 +1,5 @@
 import React from 'react';
-import { Flag, Home, ArrowLeftCircle } from 'styled-icons/feather';
+import { Flag, Home, ArrowLeftCircle } from '@styled-icons/feather';
 
 import { BaseProps } from '../../types';
 

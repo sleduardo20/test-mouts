@@ -1,11 +1,13 @@
 import React from 'react';
 
+import Details from './pages/Details';
+
 import { GlobalStyles } from './styles/GlobalStyles';
 
 const App = () => {
   return (
     <>
-      <h1>Countries Information</h1>
+      <Details />
       <GlobalStyles />
     </>
   );

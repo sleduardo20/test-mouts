@@ -1,12 +1,15 @@
 import React from 'react';
 import { screen, render } from '@testing-library/react';
 
-import Card, { CardProps } from '.';
+import Card from '.';
+import { CardProps } from '../../types';
 
 const props: CardProps = {
   name: 'Brazil',
   capital: 'Brasília',
-  flag: 'https://restcountries.eu/data/bra.svg',
+  flag: {
+    svgFile: 'https://restcountries.eu/data/bra.svg',
+  },
 };
 
 describe('<Card />', () => {
@@ -17,7 +20,7 @@ describe('<Card />', () => {
       screen.getByRole('img', { name: 'Flag of country' }),
     ).toBeInTheDocument();
 
-    expect(screen.getByRole('img')).toHaveAttribute('src', props.flag);
+    expect(screen.getByRole('img')).toHaveAttribute('src', props.flag.svgFile);
 
     expect(screen.getAllByRole('heading')).toHaveLength(1);
   });
